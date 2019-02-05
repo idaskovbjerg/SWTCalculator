@@ -85,5 +85,12 @@ namespace Calculator.Test.Unit
             var x = calculator.Power(-37, -3);
             Assert.That(x, Is.EqualTo(Math.Pow(-37,-3)).Within(0.01));
         }
+
+        [TestCase(2, 2)]
+        [TestCase(2, 2)]
+        public void Addition_ResultIsCorrect(double a, double result)
+        {
+            Assert.That(calculator.Addition(a), Is.EqualTo(result));
+        }
     }
 }
