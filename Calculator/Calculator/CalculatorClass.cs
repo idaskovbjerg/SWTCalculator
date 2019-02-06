@@ -5,8 +5,8 @@ namespace Calculator
 {
     public class CalculatorClass
     {
-        
         private double result = 0;
+
         public double Addition(double a, double b)
         {
             result = a + b;
@@ -87,7 +87,6 @@ namespace Calculator
                 throw new ArgumentException("Cannot use negative exponent while Accumulator is zero");
             }
         }
-
 
         public double Accumulator { get; private set; } = 0;
 
