@@ -5,8 +5,6 @@ namespace Calculator
 {
     public class CalculatorClass
     {
-        private double result = 0;
-
         public double Addition(double a, double b)
         {
             return a + b;
@@ -14,14 +12,12 @@ namespace Calculator
 
         public double Subtraction(double a, double b)
         {
-            result = a - b;
-            return result;
+            return a - b;
         }
 
         public double Multiplication(double a, double b)
         {
-            result = a * b;
-            return result;
+            return a * b;
         }
 
         public double Division(double a, double b)
@@ -39,8 +35,7 @@ namespace Calculator
 
         public double Power(double x, double exp)
         {
-            result = Math.Pow(x, exp);
-            return result;
+            return Math.Pow(x, exp);
         }
 
         public double Addition(double addend)
