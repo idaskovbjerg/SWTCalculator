@@ -35,7 +35,14 @@ namespace Calculator
 
         public double Power(double x, double exp)
         {
-            return Math.Pow(x, exp);
+            if (exp < 0 && x == 0.0)
+            {
+                throw new ArgumentException("Cannot use negative exponent while first number is zero");
+            }
+            else
+            {
+                return Math.Pow(x, exp);
+            }
         }
 
         public double Addition(double addend)

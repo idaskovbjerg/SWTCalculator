@@ -127,6 +127,12 @@ namespace Calculator.Test.Unit
             Assert.That(x, Is.EqualTo(Math.Pow(-37,-3)).Within(0.01));
         }
 
+        [Test]
+        public void Power_NegativeExponent_ThrowException()
+        {
+            Assert.That(() => calculator.Power(0,-5), Throws.TypeOf<ArgumentException>());
+        }
+
         // Only one parameter
         [TestCase(2, 2)]
         [TestCase(-2, -2)]
