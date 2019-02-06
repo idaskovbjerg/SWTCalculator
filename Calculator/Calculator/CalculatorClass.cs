@@ -9,8 +9,7 @@ namespace Calculator
 
         public double Addition(double a, double b)
         {
-            result = a + b;
-            return result;
+            return a + b;
         }
 
         public double Subtraction(double a, double b)
