@@ -148,6 +148,7 @@ namespace Calculator.Test.Unit
         [Test]
         public void Clear_ClearAccumulator()
         {
+            calculator.Addition(5);
             calculator.Clear();
             Assert.AreEqual(calculator.Accumulator, 0);
         }

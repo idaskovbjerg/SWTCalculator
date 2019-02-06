@@ -19,12 +19,20 @@ namespace Calculator //https://codereview.stackexchange.com/questions/126141/fir
                 Console.WriteLine("Continue to use accumulator? [Y]/[N]");
 
             }
+            calc_.Clear();
             Console.WriteLine("Do you wanna use the  normal calculator? [Y]/[N]");
             while (Console.ReadLine() == "Y")
             {
                 Calculator();
                 Console.WriteLine("New calculation? [Y]/[N]");
             }
+            Console.WriteLine("Do you wanna use the accumulator? [Y]/[N]");
+            while (Console.ReadLine() == "Y")
+            {
+                CalculatorAccumulator();
+                Console.WriteLine("Continue to use accumulator? [Y]/[N]");
+            }
+            calc_.Clear();
         }
 
         
