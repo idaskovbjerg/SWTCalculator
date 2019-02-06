@@ -10,8 +10,6 @@ namespace Calculator //https://codereview.stackexchange.com/questions/126141/fir
         public static CalculatorClass calc_ { get; set; } = new CalculatorClass();
         static void Main(string[] args)
         {
-           
-            
             Console.WriteLine("Use accumulator? [Y]/[N]");
             while (Console.ReadLine() == "Y")
             {

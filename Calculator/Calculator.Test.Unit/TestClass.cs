@@ -234,5 +234,14 @@ namespace Calculator.Test.Unit
             Assert.That(calculator.Power(a), Is.EqualTo(result).Within(0.001));
         }
 
+        [TestCase(2, 64)]
+        [TestCase(-5, -0.000031)]
+        [TestCase(0, 1)]
+        public void Power_PowerNumbers_AccEqualsMinusEight_ResultIsCorrect(double a, double result)
+        {
+            calculator.Addition(-8);
+            Assert.That(calculator.Power(a), Is.EqualTo(result).Within(0.001));
+        }
+
     }
 }
