@@ -78,14 +78,14 @@ namespace Calculator
 
         public double Power(double exponent)
         {
-            if (exponent >= 0 || Accumulator != 0)
-            {
-                Accumulator = Math.Pow(Accumulator, exponent);
-                return Accumulator;
-            }
-            else
+            if (exponent < 0 && Accumulator == 0)
             {
                 throw new ArgumentException("Cannot use negative exponent while Accumulator is zero");
+            }
+            else
+            {   
+                Accumulator = Math.Pow(Accumulator, exponent);
+                return Accumulator;
             }
         }
 
